@@ -99,8 +99,12 @@ body h1 a, header p.description {
     color: white;
 }
 
+body h1 a:hover {
+    color: white;
+}
+
 body h1 a:before {
-content: "";
+    content: "";
     display: inline-block;
     background: url(https://developers.italia.it/assets/icons/logo-it.svg) no-repeat;
     width: 37px;
@@ -109,8 +113,15 @@ content: "";
     margin-right: 5px;
 }
 
-nav#manage ul a:nth-child(0) {
-    color: white;
+nav#manage {
+    background: white;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    nav#manage {
+        position: inherit!important;
+    }
 }
 
 body#collection article {
