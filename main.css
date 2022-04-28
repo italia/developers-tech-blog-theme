@@ -68,14 +68,14 @@ html {
 }
 
 body, html {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.55;
 }
 body {
     margin: 0;
     font-family: "Titillium Web",Geneva,Tahoma,sans-serif;
     font-weight: 300;
-    color: #19191a;
+    color: #33485c;
     text-align: left;
     background-color: #fff;
 }
@@ -95,6 +95,14 @@ body#collection header {
     margin: 0;
 }
 
+body h1 {
+    font-size: 48px;
+}
+
+header p.description {
+    font-size: 24px;
+}
+
 body h1 a, header p.description {
     color: white;
 }
@@ -107,10 +115,10 @@ body h1 a:before {
     content: "";
     display: inline-block;
     background: url(https://developers.italia.it/assets/icons/logo-it.svg) no-repeat;
-    width: 37px;
-    height: 24px;
+    width: 56px;
+    height: 35px;
     background-size: contain;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 nav#manage {
@@ -126,4 +134,32 @@ nav#manage {
 
 body#collection article {
     max-width: none;
+    margin-top: 4em;
+}
+
+body#collection #wrapper {
+    max-width: 70ch;
+    margin: 0 auto;
+}
+
+body#collection article p {
+    line-height: 1.55;
+}
+
+body#collection #wrapper h2 {
+    font-size: 2.222rem;
+}
+
+#official-writing h2, #official-writing h3, #official-writing h4, #wrapper h2, #wrapper h3, #wrapper h4 {
+    color: #33485c;
+}
+
+body#collection article p:last-child {
+    border-top: 1px solid #cfcfcf;
+    padding-top: 8px;
+    margin-top: 48px;
+}
+
+#wrapper a {
+    color: #06C!important;
 }
