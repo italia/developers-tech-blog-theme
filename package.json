@@ -1,0 +1,28 @@
+{
+  "name": "developers-tech-blog-theme",
+  "version": "0.0.0",
+  "description": "Developers Italia tech blog theme",
+  "main": "process.js",
+  "scripts": {
+    "build": "rollup -c && node process.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/italia/developers-tech-blog.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/italia/developers-tech-blog/issues"
+  },
+  "homepage": "https://github.com/italia/developers-tech-blog#readme",
+  "dependencies": {
+    "@lopatnov/rollup-plugin-uglify": "^2.1.2",
+    "mustache": "^4.2.0",
+    "rollup": "^2.71.1",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-string": "^3.0.0",
+    "sass": "^1.51.0",
+    "terser": "^5.13.1"
+  }
+}
