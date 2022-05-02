@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/italia/developers-tech-blog.git"
+    "url": "git+https://github.com/italia/developers-tech-blog-theme.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/italia/developers-tech-blog/issues"
+    "url": "https://github.com/italia/developers-tech-blog-theme/issues"
   },
-  "homepage": "https://github.com/italia/developers-tech-blog#readme",
+  "homepage": "https://github.com/italia/developers-tech-blog-theme#readme",
   "dependencies": {
     "@lopatnov/rollup-plugin-uglify": "^2.1.2",
     "@rollup/plugin-node-resolve": "^13.2.1",
