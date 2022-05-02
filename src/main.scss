@@ -1,122 +1,164 @@
 html {
-    border-top: 8px solid #06c;
-}
-
-body, html {
-    font-size: 18px;
-    line-height: 1.55;
+	border-top: 8px solid #06c;
+	font-size: 18px;
+	line-height: 1.55;
 }
 body {
-    margin: 0;
-    font-family: "Titillium Web",Geneva,Tahoma,sans-serif;
-    font-weight: 300;
-    color: #33485c;
-    text-align: left;
-    background-color: #fff;
+	font-size: 18px;
+	line-height: 1.55;
+	margin: 0;
+	font-family: "Titillium Web",Geneva,Tahoma,sans-serif;
+	font-weight: 300;
+	color: #33485c;
+	text-align: left;
+	background-color: #fff;
+	footer {
+		nav {
+			margin: 0;
+			color: white;
+			a {
+				&:link {
+					color: white;
+				}
+				&:visited {
+					color: white;
+				}
+			}
+			a+a {
+				margin-left: 0;
+			}
+		}
+		a.home {
+			&:link {
+				color: white;
+			}
+		}
+		ul {
+			a {
+				&:link {
+					color: white;
+				}
+				&:visited {
+					color: white;
+				}
+			}
+		}
+	}
+	h1 {
+		font-size: 48px;
+		a {
+			color: white;
+			&:hover {
+				color: white;
+			}
+			&:before {
+				content: "";
+				display: inline-block;
+				background: url(https://developers.italia.it/assets/icons/logo-it.svg) no-repeat;
+				width: 56px;
+				height: 35px;
+				background-size: contain;
+				margin-right: 8px;
+			}
+		}
+	}
+    &#collection {
+        header {
+            padding: 1rem;
+            max-width: none;
+            margin: 0;
+        }
+        article {
+            max-width: none;
+            margin-top: 4em;
+            p {
+                line-height: 1.55;
+                &:last-child {
+                    border-top: 1px solid #cfcfcf;
+                    padding-top: 8px;
+                    margin-top: 48px;
+                }
+            }
+        }
+        #wrapper {
+            max-width: 70ch;
+            margin: 0 auto;
+            h2 {
+                font-size: 2.222rem;
+            }
+        }
+        footer {
+            nav {
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    &#post {
+        footer {
+            nav {
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    &#subpage {
+        footer {
+            nav {
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
 }
-
-body footer nav {
-    margin: 0;
-    color: white;
-}
-
-body footer a.home:link {
-    color: white;
-}
-
-body footer nav a:link, body footer nav a:visited, body footer ul a:link, body footer ul a:visited {
-    color: white;
-}
-
 article {
-    font-family: "Titillium Web",Geneva,Tahoma,sans-serif !important;
+	font-family: "Titillium Web",Geneva,Tahoma,sans-serif !important;
 }
-
 header {
-    background-color: hsl(210deg, 100%, 45%);
-    margin: 0;
-}
-
-body#collection header {
-    padding: 1rem;
-    max-width: none;
-    margin: 0;
-}
-
-body h1 {
-    font-size: 48px;
-}
-
-header p.description {
-    font-size: 24px;
-}
-
-body h1 a, header p.description {
-    color: white;
-}
-
-body h1 a:hover {
-    color: white;
-}
-
-body h1 a:before {
-    content: "";
-    display: inline-block;
-    background: url(https://developers.italia.it/assets/icons/logo-it.svg) no-repeat;
-    width: 56px;
-    height: 35px;
-    background-size: contain;
-    margin-right: 8px;
+	background-color: hsl(210deg, 100%, 45%);
+	margin: 0;
+	p.description {
+		font-size: 24px;
+		color: white;
+	}
 }
 
 nav#manage {
-    background: white;
-    cursor: pointer;
-}
-
-@media (max-width: 600px) {
-    nav#manage {
-        position: inherit!important;
+	background: white;
+	cursor: pointer;
+    @media (max-width: 600px) {
+        position: inherit !important;
     }
 }
-
-body#collection article {
-    max-width: none;
-    margin-top: 4em;
+#official-writing {
+	h2 {
+		color: #33485c;
+	}
+	h3 {
+		color: #33485c;
+	}
+	h4 {
+		color: #33485c;
+	}
 }
-
-body#collection #wrapper {
-    max-width: 70ch;
-    margin: 0 auto;
+#wrapper {
+	h2 {
+		color: #33485c;
+	}
+	h3 {
+		color: #33485c;
+	}
+	h4 {
+		color: #33485c;
+	}
+	a {
+		color: #06C !important;
+	}
 }
-
-body#collection article p {
-    line-height: 1.55;
-}
-
-body#collection #wrapper h2 {
-    font-size: 2.222rem;
-}
-
-#official-writing h2, #official-writing h3, #official-writing h4, #wrapper h2, #wrapper h3, #wrapper h4 {
-    color: #33485c;
-}
-
-body#collection article p:last-child {
-    border-top: 1px solid #cfcfcf;
-    padding-top: 8px;
-    margin-top: 48px;
-}
-
-#wrapper a {
-    color: #06C!important;
-}
-
-body#collection footer nav a, body#post footer nav a, body#subpage footer nav a {
-    color: white;
-}
-
 .bd-footer {
-    background-color:#3e5266;
-    text-align: left;
+	background-color: #3e5266;
+	text-align: left;
 }
