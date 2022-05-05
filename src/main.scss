@@ -47,6 +47,7 @@ body {
     h1 {
         font-size: 48px;
         a {
+            text-decoration: none;
             color: white;
             &:hover {
                 color: white;
@@ -77,6 +78,7 @@ body {
             p {
                 font-size: 18px;
                 line-height: 1.555;
+                font-weight: 500;
                 &:last-child {
                     border-top: 1px solid #cfcfcf;
                     padding-top: 8px;
@@ -89,6 +91,9 @@ body {
             margin: 0 auto;
             h2 {
                 font-size: 2.222rem;
+                a {
+                    text-decoration: none;
+                }
             }
         }
         footer {
@@ -101,7 +106,7 @@ body {
     }
     &#post {
         article {
-            margin-top: 1em;
+            margin-top: 4em;
             max-width: 80ch;
             font-weight: 500;
             font-size: 18px;
@@ -110,6 +115,9 @@ body {
                 &#title {
                     font-size: 2.222rem;
                 }
+            }
+            a {
+                font-weight: 600;
             }
         }
         header {
@@ -176,6 +184,7 @@ nav#manage {
     }
     a {
         color: #06C !important;
+        font-weight: 600 !important;
     }
 }
 .bd-footer {
