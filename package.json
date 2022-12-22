@@ -4,7 +4,8 @@
   "description": "Developers Italia tech blog theme",
   "main": "process.js",
   "scripts": {
-    "build": "rollup -c && node process.js"
+    "build": "npm run clean && mkdir -p dist && node prepare_assets.js && rollup -c && node process.js",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   "homepage": "https://github.com/italia/developers-tech-blog-theme#readme",
   "dependencies": {
     "@lopatnov/rollup-plugin-uglify": "^2.1.2",
+    "@node-minify/core": "^7.1.0",
+    "@node-minify/html-minifier": "^7.1.0",
     "@rollup/plugin-node-resolve": "^13.2.1",
     "bootstrap-italia": "^1.6.2",
     "mustache": "^4.2.0",

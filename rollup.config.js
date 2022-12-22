@@ -14,7 +14,7 @@ export default {
     },
     plugins: [
         string({
-            include: "./src/views/*.html",
+            include: "./dist/*.html",
         }),
         scss({
             outputStyle: 'compressed'
